@@ -63,9 +63,9 @@ training_array = [
 # Seed
 
 7.times do |i|
-  School.create(name: school_array[i][:name], website: school_array[i][:website], siret: school_array[i][:siret], campuses: school_array[i][:campuses], creation: school_array[i][:creation], capital: school_array[i][:capital], RCS: school_array[i][:RCS])
+  School.create(name: school_array[i][:name], website: school_array[i][:website], siret: school_array[i][:siret], campuses_nb: school_array[i][:campuses], creation_year: school_array[i][:creation])
 end
 
 23.times do |i|
-  Training.create(schoolID: training_array[i][:schoolID], name: training_array[i][:name], duration: training_array[i][:duration], description: training_array[i][:description], URL: training_array[i][:URL], mode: training_array[i][:mode], helpForAJob: training_array[i][:helpForAJob], hoursPerDay: training_array[i][:hoursPerDay])
+  Training.create(school_id: training_array[i][:schoolID], name: training_array[i][:name], duration: training_array[i][:duration], description: training_array[i][:description], url: training_array[i][:URL], mode: training_array[i][:mode])
 end
