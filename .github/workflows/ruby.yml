@@ -50,4 +50,4 @@ jobs:
    # - name: Run tests
     #  run: bundle exec rake
     - name: Run precompile
-      run: ./bin/rails assets:precompile
+      run: ./bin/rake assets:precompile
